@@ -17,15 +17,25 @@ The below content will explain what each section of this code does and more.
 #### Table of Contents
 
 -[Anchors](#anchors)
+
 -[Quantifiers](#Quantifiers)
+
 -[Operator](#operator)
+
 -[Character-Classes](#character-classes)
+
 -[Flags](#flags)
+
 -[Grouping-and-Capturing](#grouping-and-apturing)
+
 -[Bracket-Expressions](#bracket-expressions)
+
 -[Greedy-and-Lazy-Match](#greedy-and-lazy-match)
+
 -[Boundaries](#boundaries)
+
 -[Back-references](#back-references)
+
 -[look-ahead-and-look-behind](#look-ahead-and-look-behind)
 
 
