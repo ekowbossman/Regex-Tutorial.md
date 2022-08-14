@@ -16,36 +16,36 @@ The below content will explain what each section of this code does and more.
 
 #### Table of Contents
 
-Anchors
-Quantifiers
-OR Operator
-Character Classes
-Flags
-Grouping and Capturing
-Bracket Expressions
-Greedy and Lazy Match
-Boundaries
-Back-references
-Look-ahead and Look-behind
+-[Anchors](#anchors)
+-[Quantifiers](#Quantifiers)
+-[Operator](#operator)
+-[Character-Classes](#character-classes)
+-[Flags](#flags)
+-[Grouping-and-Capturing](#grouping-and-apturing)
+-[Bracket-Expressions](#bracket-expressions)
+-[Greedy-and-Lazy-Match](#greedy-and-lazy-match)
+-[Boundaries](#boundaries)
+-[Back-references](#back-references)
+-[look-ahead-and-look-behind](#look-ahead-and-look-behind)
+
 
 ##### Regex Components
 
-###### Anchors
+## Anchors
 
 ^abc$ -^start / $end of the string
 
 ^ Matches the beginning of the string, or the beginning of a line if the multiline flag (m) is enabled.This matches a position, not a character.
 
 $ Matches the end of the string, or the end of a line if the multiline flag (m) is enabled. This matches a position, not a character.
-
-  \b\B -word, not-word boundary
+ \b\B -word, not-word boundary
 
   \b Matches a word boundary position between a word character and non-word character or position (start / end of string). See the word character class (w) for more info.
 
    \B Matches any position that is not a word boundary. This matches a position, not a character.
 See Boundaries for more detailed Information
 
-####### Quantifiers
+## Quantifiers
 
 Quantifiers indicate that the preceding token must be matched a certain number of times. A quantifire can be greedy or lazy that is explained below.
 
