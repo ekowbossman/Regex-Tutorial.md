@@ -73,10 +73,10 @@ a+?a{2,}? -match as few as possible
 
 ab|cd -match ab or cd
 
-######## OR Operator
+## Operator
 | Acts like a boolean OR. Matches the expression before or after the |. It can operate within a group, or on a whole expression. The patterns will be tested in order. Just as in java will match either set of characters. It will look for this OR that.
 
-######### Character Classes
+## Character-Classes
 Character classes match a character from a specific set. There are a number of predefined character classes and you can also define your own sets.
 
 [ABC] Characters inside brakets will match any character in the set.
@@ -89,7 +89,8 @@ Character classes match a character from a specific set. There are a number of p
 \d Matches any digit character (0-9)
 \p Matches a character in the specified unicode category.
 
-######### Flags
+## Flags
+
 Expression flags change how the expression is interpreted. Flags follow the closing forward slash of the expression.
 
 i Ignores case
@@ -100,25 +101,25 @@ y The expression will only match from its lastIndex position and ignores the glo
 s Dot (.) will match any character, including newline.
 NOTE: Unicode is an information technology standard for the consistent encoding, representation, and handling of text expressed in most of the world's writing systems
 
-########## Grouping and Capturing
+## Grouping-and-Capturing
 (ABC) Capturing groups multiple tokens together and creates a capture group for extracting a substring or using a backreference.
 (?<name>ABC) named capturing group captures groups of a specific name.
 \1 is a numeric Referance
 (?:ABC) Groups multiple tokens together without creating a capture group.
 
-########### Bracket Expressions
+## Bracket-Expressions
 A bracket expression enclosed in square brackets is a regular expression that matches a single character, or collating element. If the initial character is a circumflex ^, then this bracket expression is complemented.
 
 See Character Class to see some examples.
 
-############ Greedy and Lazy Match
+## Greedy-and-Lazy-Match
 'Greedy' means matching the longest possible string. A Greedy quantifier tells the engine to match as many instances of its quantified token or subpattern as possible. This behavior is called greedy.
 
 'Lazy' means matching the shortest possible string. A lazy quantifier tells the engine to match as few of the quantified tokens as needed. As you'll see in the table below, a regular quantifier is made lazy by appending a ? question mark to it.
 
 See [link]"<https://javascript.info/regexp-greedy-and-lazy> for more detailed information.
 
-############# Boundaries
+## Boundaries
 The \b is an anchor like the caret and the dollar sign. It matches at a position that is called a “word boundary”. This match is zero-length.
 
 Characters that are matched by the short-hand character class \w are the characters that are treated as word characters by word boundaries.
@@ -129,12 +130,12 @@ Since digits are considered to be word characters, \b4\b can be used to match a 
 
 There are more boundries with the Regex Engine. Some examples include Tcl, GNU, and POSIX.
 
-############# Back-references
+## Back-references
 Backreferences match the same text as previously matched by a capturing group. Suppose you want to match a pair of opening and closing HTML tags, and the text in between. By putting the opening tag into a backreference, we can reuse the name of the tag for the closing tag.
 
 For Example: <([A-Z][0-9]*)\b[^>]*>.*?</\1> This regex contains only one pair of parentheses, which capture the string matched by [A-Z][0-9]*. This is the opening HTML tag. The backreference \1 references the first capturing group. \1 matches the exact same text that was matched by the first capturing group. The / before it is a literal character. It is simply the forward slash in the closing HTML tag that we are trying to match.
 
-Look-ahead and Look-behind
+## Look-ahead-and-Look-behind
 (?=ABC) is a postive lookahead and it matches a group after the main expression without including it in the result.
 
 (?!ABC) is a negitive lookahead and it specifies a group that can not match after the main expression (if it matches, the result is discarded)
@@ -146,7 +147,7 @@ Look-ahead and Look-behind
 Lookaheads and lookbehinds forces the main expressions to be what you have defined it as. Without it being exactly what it is it will not be accepted as a valid input.
 
 Author
-Christopher Even: UT coding student
+Bossman Quansah: UPenn coding student
 
 Sources and References
 
